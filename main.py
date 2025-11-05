@@ -58,3 +58,30 @@ print "Hello I'm github"
  #   result = "Неправильна дія!"
 #print("Результат:", result)
 
+
+
+#ДОМАШКА НОМЕР 2
+class Product:
+    def __init__(self, name, price, available=True):
+        self.name, self.price, self.available = name, price, available
+
+class Cart:
+    def __init__(self):
+        self.items = []
+
+    def add(self, p):
+        if p.available: self.items.append(p)
+    def total(self):
+        return sum(i.price for i in self.items)
+    def show(self):
+        for i in self.items: print(f"{i.name} — {i.price} грн")
+
+p1 = Product("Мишка", 500)
+cart = Cart()
+cart.add(p1)
+cart.show()
+print("Разом:", cart.total(), "грн")
+
+
+
+
