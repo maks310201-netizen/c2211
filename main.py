@@ -83,5 +83,17 @@ cart.show()
 print("Разом:", cart.total(), "грн")
 
 
+#ДОМАШКА НОМЕР 3
+class Device:
+    def __init__(self, name):
+        self.name = TV
+        self.on = False
 
+    def turn_on(TV):
+        self.on = True
+        print(f"{TV} увімкнено.")
+
+    def turn_off(TV):
+        self.on = False
+        print(f"{TV} вимкнено.")
 
